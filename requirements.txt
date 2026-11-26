@@ -11,14 +11,21 @@ seaborn>=0.13
 
 # Machine Learning
 scikit-learn>=1.3
-scikit-learn-extra==0.3.0
 scipy>=1.11
+imbalanced-learn>=0.11
+xgboost>=2.0
 
-# ACP
+# Clustering / Reducción dimensional
 prince>=0.13
-
-# UMAP
 umap-learn>=0.5
+
+# Visualización interactiva
+plotly>=5.18
+
+# Búsqueda genética de hiperparámetros
+# Opcional: solo necesaria para GASearchCV en AgenteRegresion con datasets >= 500 filas
+# Si no está instalada, el sistema usa GridSearchCV como fallback automático
+# sklearn-genetic-opt>=0.10     # pip install sklearn-genetic-opt
 
 # Frontend
 streamlit>=1.30
