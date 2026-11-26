@@ -41,6 +41,10 @@ class Supervisado(analisisEDA):
         self._columna_target = columna_target
         self._test_size      = test_size
 
+    def get_nombre(self) -> str:
+        """Retorna el nombre de la clase. Usado por el sistema MAS."""
+        return self.__class__.__name__
+
     # ────────────────────── PROPERTY ────────────────────────────────────────
     @property
     def df(self) -> pd.DataFrame:
